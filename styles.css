@@ -1,8 +1,78 @@
+* {
+border: 1px solid fuchsia;
+}
 html, body {
     height: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
 h1 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
 }
+
+h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+}
+
+#header-h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+}
+
+header {
+    /* margin: 30px; */
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: honeydew;
+    padding: 30px;
+}
+
+section {
+    display: flex;  
+  flex-wrap: wrap;
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+nav a {
+    padding: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header-text {
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.card {
+    display: flex;
+    width: 30%;
+    background:rgb(198, 227, 235);
+    border-radius: 15px;
+    padding: 20px;
+    justify-content:center;
+    text-align: center;
+}
+
+.card p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+.project-cards {
+    display: flex;
+}
+
