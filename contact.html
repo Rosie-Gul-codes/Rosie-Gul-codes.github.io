@@ -9,29 +9,35 @@
 <body>
     <header>
         <div class="header-text">
-            <h1 id="header-h1">Rosie Gul Kizil</h1>
-            <h2 id="header-h2">Junior Developer</h2>
+            <a href="index.html">
+                <h1 id="header-h1">Rosie Gul Kizil</h1>
+                <h2 id="header-h2">Junior Developer</h2>
+            </a>
         </div>
+        
         <nav>
-            <a href="portfolio.html">Projects</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-        <div>
-            <form
+
+        <div id="contact-page">
+            <form class="form" 
                 action="https://formspree.io/f/xvolwjwz"
                 method="POST"
             >
-            <label>
-                Your email:
-                <input type="email" name="email">
-            </label>
-            <label>
-                Your message:
-                <textarea name="message"></textarea>
-            </label>
-            <!-- your other form fields go here -->
-            <button type="submit">Send</button>
+                <label>
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit" class="send-button">Send</button>
+                
             </form>
         </div>
