@@ -143,11 +143,12 @@ margin-bottom: 20px;
    padding: 15px 15px 15px 15px;
 }
 .project-image-container {
-    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .project-image-container img {
-    width: 100%;
+    width: 75%;
 }
 /* @media (min-width: 450px) {
     .card {
