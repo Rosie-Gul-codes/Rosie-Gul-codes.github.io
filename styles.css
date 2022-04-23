@@ -77,6 +77,11 @@ nav a {
     /* flex-wrap: wrap; */
 }
 
+#style-image {
+    max-height: 150px;
+    border-radius: 15px;
+} 
+
 @media screen and (min-width: 450px) {
     .project-cards {
         grid-template-columns: 1fr 1fr;
