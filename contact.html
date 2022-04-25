@@ -6,7 +6,10 @@
     <title>ROSIE'S PORTFOLIO</title>
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
 </head>
-<body>
+<body >
+
+    <!-- gap: 20px; -->
+
     <header>
         <div class="header-text">
             <a href="index.html">
@@ -20,36 +23,75 @@
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
+            <a href="https://github.com/Rosie-Gul-codes"><img src="images/icons8-github-24.png"></a>
+            <a href="https://www.linkedin.com/in/gulkizil/"><img src="images/icons8-linkedin-24.png"></a>
         </nav>
     </header>
 
-        <div id="contact-page">
+        <!-- <div id="contact-page">
             <form class="form" 
                 action="https://formspree.io/f/xvolwjwz"
                 method="POST"
-            >
-                <label>
-                    Your name:
+            > -->
+                <!-- <label>
+                    First name:
                     <input type="name" name="name">
                 </label>
 
                 <label>
-                    Your organisation:
+                    Last name: organisation:
                     <input type="organisation" name="organisation">
                 </label>
 
                 <label>
-                    Your email:
+                    Organisation:
+                    <input type="organisation" name="organisation">
+                </label>
+
+                <label>
+                    Email:
                     <input type="email" name="email">
                 </label>
 
                 <label>
-                    Your message:
+                    Message:
                     <textarea name="message"></textarea>
                     
                 </label>
                 <!-- your other form fields go here -->
-                <button type="submit" class="send-button">Send</button>
-                
-            </form>
-        </div>
+                <!-- <button type="submit" class="send-button">Send</button> --> 
+               
+                <div class="container">
+                    <form class="form-style" action="https://formspree.io/f/xvolwjwz"
+                    method="POST">
+
+                  <div class="input-field">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+
+                <div class="input-field">
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+
+                <div class="input-field">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>      
+
+                      <input class="submit-button" type="submit" value="Submit">
+                      
+                  
+                    </form>
+
+                  </div>
+
+                  <footer>
+                    <p>2022 &copy; Rosie GulKizil</p>
+                </footer>
+                  
+
+
+            <!-- </form>
+        </div> -->

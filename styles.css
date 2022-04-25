@@ -29,14 +29,22 @@ h2 {
 
 header {
     /* margin: 30px; */
-    height: 100px;
+    height: 20vh;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
-    background-color: honeydew;
+    /* background-color: honeydew; */
     padding: 30px;
-    background-image: url(images/automation-technology-smart-industry-concept-blurred-abstract-background-gears-icons-website-header-banner-automation-129732067.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.448),rgba(0, 0, 0, 0.4)), url(images/new-portolio-banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+header .header-text a {
+    color: white;
+    align-items: center;
 }
 
 section {
@@ -44,26 +52,31 @@ section {
   flex-wrap: wrap;
 }
 
-
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
-    background-color: white;
+    color: white;
+    text-transform: uppercase;
+    /* background-color: white; */
 }
 
 nav a {
     padding: 5px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 
 .header-text {
     display: inline-block;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
-    background-color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 50px;
+    /* background-color: white; */
 }
 
 .project-cards {
@@ -80,7 +93,14 @@ nav a {
 #style-image {
     max-height: 150px;
     border-radius: 15px;
-} 
+}
+
+#profile-picture {
+    max-width: 150px;
+    border: black solid 1px;
+    margin: 10px 20px 10px 0px;
+    float: left;
+}
 
 @media screen and (min-width: 450px) {
     .project-cards {
@@ -134,10 +154,6 @@ margin-bottom: 20px;
     padding: 0 30px;
 }
 
-#contact-page {
-    padding: 30px
-}
-
 .form {
     display: flex;
     flex-direction: column;
@@ -155,17 +171,93 @@ margin-bottom: 20px;
 .project-image-container img {
     width: 75%;
 }
-/* @media (min-width: 450px) {
+/* Style inputs with type="text", select elements and textareas */
+.input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  #contact-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100vw;
+  }
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-field input, textarea{
+    padding: 10px 10px 10px 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  /* Style the submit button with a specific background color etc */
+.input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+.input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+  }
+.submit-button {
+    background-color: rgba(31, 216, 31, 0.87);
+    padding: 10px 10px 10px 10px;
+    width: fit-content;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.form-style {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* /* @media (min-width: 450px) {
     .card {
       width: 40%;
       background-color: yellow;
       color: black;
     }
-  }
+  } */
   
-  @media (min-width: 700px) {
-    .card {
-      width: 25%;
-      background-color: rgb(140, 197, 255);
-    } */
-    
+  @media (max-width: 375px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 70%;
+    } 
+  header {
+      height: auto;
+      justify-content: center;
+  }
+}  
