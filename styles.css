@@ -36,14 +36,14 @@ header {
     justify-content: space-between;
     /* background-color: honeydew; */
     padding: 30px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.448),rgba(0, 0, 0, 0.4)), url(images/new-portolio-banner.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url(images/new-portolio-banner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
 }
 
 header .header-text a {
-    color: white;
+    color: black;
     align-items: center;
 }
 
@@ -65,7 +65,8 @@ nav {
 nav a {
     padding: 5px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: black;
+   font-weight: bold;
 }
 
 .header-text {
